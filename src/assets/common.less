@@ -1,0 +1,227 @@
+@header-bg: #ededed;
+@header-text: #172c43;
+@footer-bg: #f75354;
+@footer-bg-hover: #e53737;
+@footer-line: #ffffff;
+@footer-text: #ffffff;
+@footer-menu-text: #ffffff;
+@footer-text-hover: #e5e5e5;
+
+@article-bg: #ecf0f5;
+@article-search-screen:#337ab7;
+@list-box-border: #e3e6eb;
+@list-box-text-1: #5d554f;
+@list-box-text-2: #f75354;
+@list-box-text-3: #bdbdbd;
+
+@header-height: 0.44rem;
+@footer-height: 0.55rem;
+@push-size: 0.5rem;
+@push-size-little: 0.4rem;
+
+@input-placeholder: #d2d2d2;
+
+body {
+  background-color: @article-bg;
+}
+
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: @header-height;
+  line-height: @header-height;
+  background-color: @header-bg;
+  text-align: center;
+  font-size: 0.18rem;
+  color: @header-text;
+  padding: 0 0.15rem;
+  z-index: 4;
+  .pull-left {
+    font-size: 0.15rem;
+  }
+} */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: @header-height;
+  line-height: @header-height;
+  background-color: @header-bg;
+  text-align: center;
+  font-size: 0.18rem;
+  color: @header-text;
+  padding: 0 0.15rem;
+  z-index: 4;
+  .pull-left {
+    width: 0.36rem;
+    position: absolute;
+    top: 0.12rem;
+    left: 0.15rem;
+    font-size: 0.15rem;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  height: 0.5rem;
+  //text-align: center;
+  bottom: 0;
+  clear: both;
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: @footer-bg;
+
+  .footer-inline {
+    position: absolute;
+    height: 0.5rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    .donationShop {
+      //margin-right: 0.22rem
+    }
+    .consumption {
+      //margin-left: 0.22rem
+    }
+  }
+  .footer-inline li {
+    text-align: center;
+    display: inline-block;
+    height: 0.5rem;
+    color: @footer-menu-text;
+
+    .menu-line {
+      width: 100%;
+      height: 0.02rem;
+      margin-bottom: 0.07rem;
+    }
+    .fa {
+      font-size: 0.2rem;
+    }
+    p {
+      font-size: 0.11rem;
+    }
+  }
+  .footer-inline li.needMarkets{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.9rem;
+  }
+  .footer-inline li.donationShop{
+    position: absolute;
+    top: 0;
+    left: 0.9rem;
+    width: 0.8rem;
+    margin-right: 0.12rem
+  }
+  .footer-inline li.consumption{
+    position: absolute;
+    top: 0;
+    right: 0.9rem;
+    width: 0.8rem;
+    margin-left: 0.12rem
+  }
+  .footer-inline li.personalCenter{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.9rem;
+  }
+  /* .footer-inline li:hover {
+    background-color: @footer-bg-hover;
+    color: #fff;
+    .menu-line {
+      background-color: @footer-line;
+    }
+  } */
+  .push {
+    padding-top: 0.05rem;
+    margin: 0 auto;
+    position: relative;
+    top: -0.2rem;
+    width: @push-size;
+    height: @push-size;
+    border-radius: 50%;
+    background-color: @footer-bg;
+    z-index: 5;
+    text-align: center;
+    .push-box {
+      margin: 0 auto;
+      width: @push-size-little;
+      height: @push-size-little;
+      line-height: @push-size-little;
+      border-radius: 50%;
+      background-color: @footer-line;
+      font-size: 0.25rem;
+
+      span{
+        color: @footer-bg;
+      }
+    }
+    p {
+      margin-top: 0.05rem;
+      color: @footer-text;
+      font-size: 0.11rem;
+
+    }
+  }
+}
+
+article {
+  text-align: left;
+  margin-top: @header-height;
+  margin-bottom: @footer-height;
+}
+
+.ln_solid{
+  width: 100%;
+  height: 0rem;
+  border-top: 0.01rem solid #ddd;
+}
+
+.publish {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 10;
+  color: white;
+  .menu-box {
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    a,a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    .fa{
+      width: 0.55rem;
+      height: 0.55rem;
+      line-height: 0.55rem;
+      border-radius: 50%;
+      margin: 0.1rem;
+      font-size: 0.28rem;
+      background-color: #fff;
+    }
+    .fa-rmb{
+      color:#6cb5e5;
+      line-height: 0.6rem;
+    }
+    .fa-cube {
+      color:#9c5ab7;
+      padding-left: 0.03rem;
+    }
+    .fa-close {
+      color: #bec4c8;
+    }
+  }
+}
